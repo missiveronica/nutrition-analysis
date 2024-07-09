@@ -1,4 +1,37 @@
+body {
+    background-image: url("backdrop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
 .container {
     display: flex;
     justify-content: center;
+}
+h1 {
+    font-size: 35px;
+color: #3C3633;
+    border-bottom: 5px  solid #B3A398; 
+}
+.border {
+    color: #3C3633;
+    font-size: 25px;
+    border-bottom: 3px  solid #B3A398; 
+}
+.frame {
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #EDC6B1;
+width: fit-content;
+border-radius: 10%;
+}
+.nutr {
+list-style-type: none;
+}
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -30,8 +30,10 @@ function App() {
   }
 }
       useEffect(() => {
+        if (wordSubmitted !== '') {
       let ingr = wordSubmitted.split(/[,,;,\n,\r]/); 
       getIngredients(ingr);
+        }
       }, [wordSubmitted]);
 
   const myRecipeSearch = (e) => {
@@ -56,9 +58,9 @@ function App() {
   <button onClick={finalSearch}>Search</button>
 </div>
 {stateLoader && <LoaderPage/>}
-<div> 
+<div className='frame'> 
 {
-          myNutrition && <p>{myNutrition.calories} kcal</p>
+          myNutrition && <p className='border'>{myNutrition.calories} kcal</p>
         }
   {
     myNutrition && Object.values(myNutrition.totalNutrients)

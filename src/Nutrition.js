@@ -1,8 +1,10 @@
+
 function Nutrition ({label, quantity, unit}) {
     return (
-<div>
-    <p><b>{label}</b> - {quantity} {unit}</p>
-    <p></p>
+        <div className="cont">
+<ul className="nutr">
+    <li><b>{label}</b> - {quantity} {unit}</li>
+</ul>
 </div>
     )
 }

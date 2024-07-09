@@ -1,4 +1,7 @@
-
+.container_loader {
+  display: flex;
+  justify-content: center;
+}
 .lds-grid,
 .lds-grid div {
   
