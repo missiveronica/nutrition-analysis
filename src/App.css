@@ -3,11 +3,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    background-attachment: fixed;
 
 }
 .container {
     display: flex;
     justify-content: center;
+    padding: 20px;
 }
 h1 {
     font-size: 35px;
@@ -34,4 +36,22 @@ list-style-type: none;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+button {
+    font-size: 15px;
+    padding: 20px;
+    border: none;
+    border-radius: 11px;
+    background: #658147;
+    box-shadow:  5px 5px 38px #28341c,
+                 -5px -5px 38px #a2ce72;
+
+}
+.search {
+    border-color: #B3A398;
+    background-color: #CCD3CA;
+    box-shadow: 2px 5px #E3E1D9;
+    padding: 10px;
+    width: 300px;
+
 }

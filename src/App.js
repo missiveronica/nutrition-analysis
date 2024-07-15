@@ -51,11 +51,11 @@ function App() {
       </div>
 <div className='container'>
   <form onSubmit={finalSearch}>
-    <input className='search' onChange={myRecipeSearch} placeholder='Search...' value ={mySearch}/>
+    <input className='search' onChange={myRecipeSearch} placeholder='✍🏻 Insert your ingredients...' value ={mySearch}/>
   </form>
 </div>
 <div className='container'>
-  <button onClick={finalSearch}>Search</button>
+  <button onClick={finalSearch}>🔍 Search</button>
 </div>
 {stateLoader && <LoaderPage/>}
 <div className='frame'> 
